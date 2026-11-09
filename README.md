@@ -43,14 +43,11 @@ pnpm j-noul1
 
 # 複数タイプの問い合わせをいっぺんに
 pnpm multi1
-
-# 画像に対して Noul、Choice、Score を問い合わせる
-pnpm img1
 ```
 
-## BOXサンプルコード
+### BOXサンプルコード
 
-[box](https://docs.typesafe.ai/primitives/box) は CV っぽいやつ。画面から
+[box](https://docs.typesafe.ai/primitives/box) は CV っぽいやつ。画面から指定した物体の位置を得る。
 
 ```sh
 # 画像内の対象を Box で検索し、結果の JSON と注釈付き画像を出力
@@ -63,9 +60,9 @@ pnpm box1 # 画像は tmp/ex1.jpg に保存
 `tmp/ex1.jpg`のような画像が出力される。  
 ![tmp/ex1.jpg](docs/imgs/ex1-o.jpg)
 
-## 画像サンプルコード
+### 画像サンプルコード
 
-同じ画像で
+上と同じ画像で
 
 - Noul -「猫が写っている?」→ 0〜1
 - Choice -「写っている動物は?」→ cat/dog/bird
@@ -74,6 +71,7 @@ pnpm box1 # 画像は tmp/ex1.jpg に保存
 を問い合わせる例:
 
 ```sh
+# 画像に対して Noul、Choice、Score を問い合わせる
 pnpm run img1
 ```
 
