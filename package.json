@@ -1,0 +1,28 @@
+{
+	"name": "jev-node1",
+	"private": true,
+	"type": "module",
+	"module": "src/index.ts",
+	"scripts": {
+		"start": "node --env-file-if-exists=.env src/index.ts",
+		"ex0": "node --env-file-if-exists=.env src/ex0.ts",
+		"noul1": "node --env-file-if-exists=.env src/noul1.ts",
+		"noul2": "node --env-file-if-exists=.env src/noul2.ts",
+		"noul3": "node --env-file-if-exists=.env src/noul3.ts",
+		"j-noul1": "node --env-file-if-exists=.env src/j-noul1.ts",
+		"multi1": "node --env-file-if-exists=.env src/multi1.ts",
+		"format": "oxfmt",
+		"lint": "oxlint",
+		"check": "oxfmt && oxlint",
+		"lint-tsc": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@typesafe-ai/sdk": "^0.7.0"
+	},
+	"devDependencies": {
+		"@types/node": "^26.0.0",
+		"oxfmt": "^0.77.0",
+		"oxlint": "^1.92.0",
+		"typescript": "^7.0.2"
+	}
+}
