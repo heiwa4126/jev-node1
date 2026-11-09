@@ -4,6 +4,7 @@ node_modules
 # output
 dist
 *.tgz
+/tmp/
 
 # logs
 logs
@@ -24,3 +25,7 @@ logs
 .idea
 .vscode/
 .DS_Store
+
+tmp/
+tmp*
+*.tmp

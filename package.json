@@ -11,13 +11,15 @@
 		"noul3": "node --env-file-if-exists=.env src/noul3.ts",
 		"j-noul1": "node --env-file-if-exists=.env src/j-noul1.ts",
 		"multi1": "node --env-file-if-exists=.env src/multi1.ts",
+		"box1": "node --env-file-if-exists=.env src/box1.ts",
 		"format": "oxfmt",
 		"lint": "oxlint",
-		"check": "oxfmt && oxlint",
+		"check": "oxfmt && oxlint --fix",
 		"lint-tsc": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@typesafe-ai/sdk": "^0.7.0"
+		"@typesafe-ai/sdk": "^0.7.0",
+		"sharp": "^0.35.5"
 	},
 	"devDependencies": {
 		"@types/node": "^26.0.0",

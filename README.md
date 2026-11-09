@@ -45,16 +45,20 @@ pnpm j-noul1
 pnpm multi1
 ```
 
-### フォーマッタ / リンター
+## BOXサンプル
 
-[oxc](https://oxc.rs/) の [oxfmt](https://oxc.rs/docs/guide/usage/formatter) と [oxlint](https://oxc.rs/docs/guide/usage/linter) を使用。
+[box](https://docs.typesafe.ai/primitives/box) は CV っぽいやつ。画面から
 
 ```sh
-pnpm format   # oxfmt で整形
-pnpm lint     # oxlint
-pnpm check    # format + lint
-pnpm lint-tsc # tsc --noEmit による型チェック
+# 画像内の対象を Box で検索し、結果の JSON と注釈付き画像を出力
+pnpm box1 # 画像は tmp/ex1.jpg に保存
 ```
+
+入力`example/imgs/ex1.jpg`に対して  
+![example/imgs/ex1.jpg](docs/imgs/ex1-i.jpg)
+
+`tmp/ex1.jpg`のような画像が出力される。  
+![tmp/ex1.jpg](docs/imgs/ex1-o.jpg)
 
 ## 注意
 
