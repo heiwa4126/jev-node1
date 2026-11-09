@@ -1,10 +1,11 @@
 # jev-node1
 
-Bun で @typesafe-ai/sdk 0.7.0 を使うとエラーになるので、一時的に pnpm と node でやる版
+Bun で @typesafe-ai/sdk 0.7.0 を使うとエラーになるので、一時的に pnpm と node でやる版。
 
-[0.7.0 fails every request on Bun with "TypeError: Body already used" (bufferResponse) · Issue #20 · typesafe-ai/typesafe-sdk-js](https://github.com/typesafe-ai/typesafe-sdk-js/issues/20)
+- 元プロジェクト - [heiwa4126/jev-bun1](https://github.com/heiwa4126/jev-bun1)
+- SDK の issue #20 - [0.7.0 fails every request on Bun with "TypeError: Body already used" (bufferResponse) · Issue #20 · typesafe-ai/typesafe-sdk-js](https://github.com/typesafe-ai/typesafe-sdk-js/issues/20)
 
-0.6.0 では "box" が無い。
+0.6.0 では "[box](https://docs.typesafe.ai/primitives/box)" が無いんで、しばらくこっちで。
 
 ## 必要なもの
 
