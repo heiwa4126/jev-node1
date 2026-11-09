@@ -43,9 +43,12 @@ pnpm j-noul1
 
 # 複数タイプの問い合わせをいっぺんに
 pnpm multi1
+
+# 画像に対して Noul、Choice、Score を問い合わせる
+pnpm img1
 ```
 
-## BOXサンプル
+## BOXサンプルコード
 
 [box](https://docs.typesafe.ai/primitives/box) は CV っぽいやつ。画面から
 
@@ -59,6 +62,26 @@ pnpm box1 # 画像は tmp/ex1.jpg に保存
 
 `tmp/ex1.jpg`のような画像が出力される。  
 ![tmp/ex1.jpg](docs/imgs/ex1-o.jpg)
+
+## 画像サンプルコード
+
+同じ画像で
+
+- Noul -「猫が写っている?」→ 0〜1
+- Choice -「写っている動物は?」→ cat/dog/bird
+- Score -「パンの焼け具合?」→ pale/medium/dark
+
+を問い合わせる例:
+
+```sh
+pnpm run img1
+```
+
+- 猫の Noul は 0.97
+- Choice は cat (0.98), dog(0.02)
+- パンの Score は medium (0.77)
+
+になりました。
 
 ## 注意
 
