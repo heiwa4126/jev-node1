@@ -23,9 +23,9 @@
 		"sharp": "^0.35.5"
 	},
 	"devDependencies": {
-		"@types/node": "^26.0.0",
-		"oxfmt": "^0.77.0",
-		"oxlint": "^1.92.0",
+		"@types/node": "^26.6.6",
+		"oxfmt": "^0.78.0",
+		"oxlint": "^1.93.0",
 		"typescript": "^7.0.2"
 	}
 }

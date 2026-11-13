@@ -81,8 +81,10 @@ pnpm run img1
 
 になりました。
 
-## 注意
+## メモ
 
-`@typesafe-ai/sdk`は 0.7.0 を使用しています。0.7.0 は Bun で
+`@typesafe-ai/sdk`は 0.7.0 を使用しています。
+
+0.7.0 は Bun で
 `TypeError: Body already used`になる問題がありますが（[typesafe-sdk-js#20](https://github.com/typesafe-ai/typesafe-sdk-js/issues/20)）、
 Node.js では発生しません。
