@@ -12,6 +12,7 @@
 		"j-noul1": "node --env-file-if-exists=.env src/j-noul1.ts",
 		"multi1": "node --env-file-if-exists=.env src/multi1.ts",
 		"box1": "node --env-file-if-exists=.env src/box1.ts",
+		"box2": "node --env-file-if-exists=.env src/box2.ts",
 		"img1": "node --env-file-if-exists=.env src/img1.ts",
 		"format": "oxfmt",
 		"lint": "oxlint",

@@ -9,6 +9,7 @@
 
 		// Node.js runs .ts files directly (type stripping), so only erasable syntax is allowed
 		"erasableSyntaxOnly": true,
+		"allowImportingTsExtensions": true,
 		"verbatimModuleSyntax": true,
 		"noEmit": true,
 
