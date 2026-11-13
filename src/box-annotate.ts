@@ -33,6 +33,7 @@ export async function annotateBoxes(
 
 	// 緑色の矩形と左上のラベルを SVG で作成する。文字の黒い縁取りは視認性のため。
 	const annotations = Object.entries(response.answers)
+		.filter(([, answer]) => answer.type === "box")
 		.map(([item, answer]) => {
 			const { left, top, right, bottom } = answer.box;
 			const x = left * width;
