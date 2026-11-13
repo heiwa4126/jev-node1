@@ -96,6 +96,7 @@ pnpm box2 # 画像は tmp/ex2.jpg に保存
 
 - 同種の対象が複数あるときにどの猫が選ばれるかは不明
 - 「見つからない」という答えはなく、対象がなくても必ずなんか返す
+- [Writing Box questions](https://docs.typesafe.ai/primitives/box#writing-box-questions) のとこに使い方ヒントがいろいろ書いてある
 
 ## メモ
 
