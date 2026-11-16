@@ -83,9 +83,9 @@ pnpm run img1
 
 ## BOXサンプルコード2
 
-Boxプリミティブは面白いんだけど
-「Box は 1つの対象を見つけるよう設計されていて、答えは常に1つの箱」で
-「1つに絞れる記述にする」べき(とドキュメントに書いてある)。
+Box プリミティブは面白いんだけど
+「Box は 1 つの対象を見つけるよう設計されていて、答えは常に 1 つの箱」で
+「1 つに絞れる記述にする」べき(とドキュメントに書いてある)。
 
 で、それを試すサンプル:  
 ![猫3匹](docs/imgs/ex2-i.jpg)
@@ -105,3 +105,7 @@ pnpm box2 # 画像は tmp/ex2.jpg に保存
 0.7.0 は Bun で
 `TypeError: Body already used`になる問題がありますが（[typesafe-sdk-js#20](https://github.com/typesafe-ai/typesafe-sdk-js/issues/20)）、
 Node.js では発生しません。
+
+ex3.jpg, ex4.jpg は
+"COCO80 クラスのオブジェクトを 1 個以上づつ含むサンプル画像を作って"
+というプロンプトで作った AI 画像です。
