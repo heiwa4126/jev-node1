@@ -51,7 +51,10 @@ pnpm multi1
 
 ```sh
 # 画像内の対象を Box で検索し、結果の JSON と注釈付き画像を出力
-pnpm box1 # 画像は tmp/ex1.jpg に保存
+pnpm box1 # 入力: example/imgs/ex1.jpg, 出力: tmp/ex1.jpg
+
+# 追加サンプル。ex5はイラスト風画像
+pnpm box5 # 入力: example/imgs/ex5.jpg, 出力: tmp/ex5.jpg
 ```
 
 入力`example/imgs/ex1.jpg`に対して  

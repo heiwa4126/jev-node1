@@ -16,6 +16,7 @@
 		"img1": "node --env-file-if-exists=.env src/img1.ts",
 		"box3": "node --env-file-if-exists=.env src/box3.ts",
 		"box4": "node --env-file-if-exists=.env src/box4.ts",
+		"box5": "node --env-file-if-exists=.env src/box5.ts",
 		"format": "oxfmt",
 		"lint": "oxlint",
 		"check": "oxfmt && oxlint --fix",
