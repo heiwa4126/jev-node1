@@ -5,12 +5,16 @@ import { annotateBoxes } from "./box-annotate.ts";
 const inputPath = "example/imgs/ex2.jpg";
 const outputPath = "tmp/ex2.jpg";
 const items = [
-	"Any cat",
 	"The orange cat",
 	"The tabby cat",
 	"The tuxedo cat",
-	"The black sheep",
-	"Abraham Lincoln"
+	"the rightmost cat",
+	"the leftmost cat",
+	// 1個ではないもの
+	"Any cat",
+	// 存在しないもの
+	"Banana",
+	"Community college"
 ];
 
 const photo = await readFile(inputPath);
