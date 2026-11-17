@@ -98,6 +98,22 @@ pnpm box2 # 画像は tmp/ex2.jpg に保存
 - 「見つからない」という答えはなく、対象がなくても必ずなんか返す
 - [Writing Box questions](https://docs.typesafe.ai/primitives/box#writing-box-questions) のとこに使い方ヒントがいろいろ書いてある
 
+## BOXサンプルコード3,4
+
+[COCO80](https://cocodataset.org/)
+に含まれるオブジェクトクラスを検出するテスト。
+
+```sh
+pnpm box3 # 入力: example/imgs/ex3.jpg, 出力: tmp/ex3.jpg
+pnpm box4 # 入力: example/imgs/ex4.jpg, 出力: tmp/ex4.jpg
+```
+
+ex3.jpg, ex4.jpg は
+"COCO80 クラスのオブジェクトを 1 個以上づつ含むサンプル画像を作って"
+というプロンプトで作った AI 画像。
+
+YOLO26n より検知するけど、"person" のように複数あるオブジェクトは 1 個しか検出できない。
+
 ## メモ
 
 `@typesafe-ai/sdk`は 0.7.0 を使用しています。
@@ -105,7 +121,3 @@ pnpm box2 # 画像は tmp/ex2.jpg に保存
 0.7.0 は Bun で
 `TypeError: Body already used`になる問題がありますが（[typesafe-sdk-js#20](https://github.com/typesafe-ai/typesafe-sdk-js/issues/20)）、
 Node.js では発生しません。
-
-ex3.jpg, ex4.jpg は
-"COCO80 クラスのオブジェクトを 1 個以上づつ含むサンプル画像を作って"
-というプロンプトで作った AI 画像です。
