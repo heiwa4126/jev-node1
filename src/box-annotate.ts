@@ -38,7 +38,7 @@ export async function annotateBoxes(
 			const { left, top, right, bottom } = answer.box;
 			const x = left * width;
 			const y = top * height;
-			return `<rect x="${x}" y="${y}" width="${(right - left) * width}" height="${(bottom - top) * height}" fill="none" stroke="lime" stroke-width="2" />
+			return `<rect x="${x}" y="${y}" width="${(right - left) * width}" height="${(bottom - top) * height}" fill="none" stroke="lime" stroke-width="4" />
 <text x="${x + 2}" y="${Math.min(y + 16, height - 2)}" font-family="sans-serif" font-size="16" fill="lime" stroke="black" stroke-width="3" paint-order="stroke">${item}</text>`;
 		})
 		.join("\n");

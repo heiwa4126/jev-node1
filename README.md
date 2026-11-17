@@ -53,8 +53,9 @@ pnpm multi1
 # 画像内の対象を Box で検索し、結果の JSON と注釈付き画像を出力
 pnpm box1 # 入力: example/imgs/ex1.jpg, 出力: tmp/ex1.jpg
 
-# 追加サンプル。ex5はイラスト風画像
+# 追加サンプル。ex5はイラスト風画像, ex6はアニメ風
 pnpm box5 # 入力: example/imgs/ex5.jpg, 出力: tmp/ex5.jpg
+pnpm box6 # 入力: example/imgs/ex6.jpg, 出力: tmp/ex6.jpg
 ```
 
 入力`example/imgs/ex1.jpg`に対して  
